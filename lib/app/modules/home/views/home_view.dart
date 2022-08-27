@@ -121,7 +121,6 @@ class HomeView extends GetView<HomeController> {
                     return Padding(
                       padding: const EdgeInsets.all(2.0),
                       child: InkWell(
-                        //onTap Dialg with edit and delete, Complete
                         onTap: () {
                           showDialog(
                               context: context,
@@ -191,15 +190,26 @@ class HomeView extends GetView<HomeController> {
                                     ));
                               });
                         },
-
-                        ///List of tasks
-                        child: Card(
-                          elevation: 3,
+                        child: Padding(
+                          padding: const EdgeInsets.all(5.0),
                           child: ListTile(
+                            shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(10.0)),
                             contentPadding: EdgeInsets.all(2),
-                            tileColor: Colors.white,
+                            tileColor: Color.fromARGB(255, 226, 229, 230),
+                            leading: Icon(
+                              Icons.pending_actions_sharp,
+                              color: Colors.black,
+                            ),
                             title: Text(controller.todoList[index].title,
                                 overflow: TextOverflow.ellipsis),
+                            subtitle: Text(
+                                controller.todoList[index].description,
+                                overflow: TextOverflow.ellipsis),
+                            trailing: Icon(
+                              Icons.arrow_forward_ios_rounded,
+                              color: Colors.black,
+                            ),
                           ),
                         ),
                       ),

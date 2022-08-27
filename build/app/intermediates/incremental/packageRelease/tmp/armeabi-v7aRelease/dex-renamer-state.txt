@@ -1,0 +1,4 @@
+#Sat Aug 27 22:44:19 IST 2022
+base.0=F\:\\Flutter Apps Projects\\ekstep_assignment\\build\\app\\intermediates\\dex\\release\\minifyReleaseWithR8\\classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
