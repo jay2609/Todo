@@ -1,0 +1,29 @@
+name: ekstep_assignment
+version: 1.0.0+1
+publish_to: none
+description: A new Flutter project.
+environment: 
+  sdk: '>=2.17.0 <3.0.0'
+
+dependencies: 
+  cupertino_icons: 
+  firebase_core:
+  cloud_firestore:
+  get_cli:
+  firebase_auth:
+  google_sign_in:
+  get:
+  shared_preferences:
+  uuid:
+  twitter_login:
+  flutter: 
+    sdk: flutter
+
+dev_dependencies: 
+  flutter_lints: ^2.0.0
+  flutter_test: 
+    sdk: flutter
+
+flutter: 
+  uses-material-design: true
+
